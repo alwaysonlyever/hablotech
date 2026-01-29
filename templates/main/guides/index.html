@@ -1,0 +1,41 @@
+{% extends 'main/home.html' %} <!-- Assuming base layout is within home.html or similar -->
+
+{% block content %}
+<section class="guides-hero hero">
+    <div class="container">
+        <h1>Buyer's Guides</h1>
+        <p class="hero-subtitle">Honest, expert advice on the best tech for your career and projects.</p>
+    </div>
+</section>
+
+<section class="guides-grid featured">
+    <div class="container">
+        <div class="card-grid">
+            <article class="card featured-card">
+                <div class="card-icon">🚁</div>
+                <h3>2026 Drone Buyer's Guide</h3>
+                <p>Everything you need to know about 4K/6K AI-stabilization and the best drones for any level.</p>
+                <a href="{% url 'drone_guide' %}" class="btn btn-primary">View Guide</a>
+            </article>
+            <article class="card">
+                <div class="card-icon">💻</div>
+                <h3>Best Laptops for Developers 2026</h3>
+                <p>From M4 MacBooks to high-end Linux workstations.</p>
+                <a href="#" class="btn btn-secondary">Read Guide</a>
+            </article>
+            <article class="card">
+                <div class="card-icon">🎙️</div>
+                <h3>Ultimate YouTube Gear Setup</h3>
+                <p>Everything you need for a pro tutorial channel.</p>
+                <a href="#" class="btn btn-secondary">Read Guide</a>
+            </article>
+            <article class="card">
+                <div class="card-icon">🧠</div>
+                <h3>Top AI Tools for Productivity</h3>
+                <p>Which LLMs and agents are worth the subscription?</p>
+                <a href="#" class="btn btn-secondary">Read Guide</a>
+            </article>
+        </div>
+    </div>
+</section>
+{% endblock %}
